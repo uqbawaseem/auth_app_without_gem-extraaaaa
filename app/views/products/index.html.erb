@@ -1,0 +1,17 @@
+<%= link_to 'Add new product', controller: 'products', action: 'new' %>
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+    </tr>
+    <% @products.each do |p|%>
+    <tr>
+        <td><%p.id%></td>
+        <td><%p.name%></td>
+        <td><%p.email%></td>
+        
+    </tr>
+    <% end %>
+</table>

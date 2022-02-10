@@ -1,0 +1,7 @@
+<h3> Adding new Item</h3>
+<%= form_for @item do |f|%>
+    Name: &nbsp;&nbsp;&nbsp;&nbsp;<%= f.text_field :name%><br><br>
+    Price: &nbsp;&nbsp;&nbsp;<%= f.text_field :price%><br><br>
+    Quantity: <%= f.number_field :quantity%><br><br>
+    Submit: &nbsp;&nbsp;<%= f.submit%><br><br>
+<% end %>

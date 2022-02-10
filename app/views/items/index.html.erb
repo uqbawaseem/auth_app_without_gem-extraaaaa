@@ -1,0 +1,22 @@
+<br><table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Quantity</td>
+        <td>Action</td>
+
+    </tr>
+    <% @items.each do |i|%>
+    <tr>
+        <td><%=i.id%></td>
+        <td><%=i.name%></td>
+        <td><%=i.price%></td>
+        <td><%=i.quantity%></td>
+        <td><%= link_to 'Details', item_path(i) %></td>
+        <td><%= link_to 'Edit', edit_item_path(i) %></td><td>
+        <%= button_to 'Delete', i, method: :delete %></td>
+
+    </tr>
+    <% end %>
+</table>
