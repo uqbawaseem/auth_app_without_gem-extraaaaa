@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root 'products#index'
-  get '/login' => 'sessions#new'
+  get '/login' => 'sessions#new' 
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
 
-  get '/signup' => 'users#new'
+  get 'users/signup' => 'users#new'
   post '/users' => 'users#create'
 end

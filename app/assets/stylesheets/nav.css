@@ -1,0 +1,38 @@
+*{
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+   
+  }
+  /* ul li:hover{
+    background-color: aliceblue;
+    color: black;
+  }
+  ul li a:hover{
+    background-color: aliceblue;
+    color: black;
+  } */
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  li a:hover {
+    background-color: rgb(170, 170, 170);
+    color: rgb(251, 253, 253);
+  }
